@@ -1,0 +1,75 @@
+button{
+    width: 150px;
+    height: 35px;
+    background-color: rgb(75, 128, 252);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: aqua;
+}
+
+#para{
+    font-family: 'Kolker Brush', cursive;
+}
+
+.demo{
+    height: 100px;
+    width: 100px;
+    background-color: darkturquoise;
+    margin: 20px;
+    text-align: center;
+    padding: 30PX;
+    transition: width 3s ease-in-out 1s;
+  }
+
+  .demo:hover{
+    width: 300px;
+}
+
+.circle{
+    height: 200px;
+    width: 200px;
+    background-color: brown;
+    border-radius: 50%;
+}
+
+
+
+
+
+  @media only screen and (min-width:480px) and (max-width:680px) {
+
+
+      .demo{
+        background-color: chartreuse;
+      }
+
+      .circle{
+        background-color: rgb(15, 139, 241);
+        
+      }
+  }
+
+
+
+  .box{
+    height: 200px;
+    width: 200px;
+    background-color: #508890;
+    animation-name:animation_box;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+  @keyframes animation_box{
+
+    25%{
+        transform: rotate(1turn);
+    }
+    100%{
+        transform: rotate(3turn);
+    }
+}
